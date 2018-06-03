@@ -5,6 +5,7 @@
 
 `lib` has two sub pacakges - `liba` and `libb`, which in turn each have to inner modules - `suba` and `subb`. The dir structure is:
 
+```
 lib/
 ├── dub.json
 ├── liba/
@@ -22,6 +23,7 @@ lib/
         │   └── package.d
         └── subb/
             └── package.d
+```
 
 Where `liba/package` exposes the function in modules `liba.suba` and `libb.subb` publicly. And `libb` has no package so `libb`'s submodule need to be explicitly imported.
 
