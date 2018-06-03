@@ -1,4 +1,4 @@
-module liba.suba;
+module lib.libb.suba;
 
 public void f() {
     import std.stdio : writeln;

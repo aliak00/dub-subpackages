@@ -1,7 +1,8 @@
 import std.stdio;
-import testlib.liba;
+
+import lib.liba;
 
 void main()
 {
-	f;
+	fa;
 }
