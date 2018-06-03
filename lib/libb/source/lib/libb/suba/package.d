@@ -1,11 +1,11 @@
-module lib.liba.suba;
+module lib.libb.suba;
 
-public void f() {
+public void fa() {
     import std.stdio : writeln;
     import std.traits : moduleName;
-    writeln(moduleName!f);
+    writeln(moduleName!fa);
 }
 
 unittest {
-    f;
+    fa;
 }

@@ -1,0 +1,19 @@
+{
+	"name": "dub-subpackages",
+	"authors": [
+		"Ali Akhtarzada",
+		"Jesse Phillips"
+	],
+	"description": "Lots of ways to do dub Sub Packages",
+	"copyright": "Copyright © 2018, Ali Akhtarzada",
+	"license": "MIT",
+	"subPackages": [
+		"lib/",
+		"lib/liba/",
+		"lib/libb/",
+		"test"
+	],
+	"targetPath": "bin",
+
+
+}
