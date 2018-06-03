@@ -8,12 +8,12 @@ void import_all_liba() {
 
 void import_libb_suba_only() {
 	import lib.libb.suba;
-	f;
+	fa;
 }
 
 void import_libb_subb_only() {
 	import lib.libb.suba;
-	f;
+	fa;
 }
 
 void main()
