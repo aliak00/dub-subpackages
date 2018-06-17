@@ -7,8 +7,12 @@
 	"copyright": "Copyright © 2018, Ali Akhtarzada",
 	"license": "MIT",
 	"dependencies": {
-		"dub-subpackages:liba": "*",
-		"dub-subpackages:libb": "*"
+		"lib:suba": "*",
+		"lib:subb": "*"
 	},
+	"subPackages": [
+		"./suba/",
+		"./subb/"
+	],
 	"targetPath": "bin"
 }

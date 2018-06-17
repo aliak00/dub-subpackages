@@ -7,6 +7,9 @@
 	"copyright": "Copyright © 2018, Ali Akhtarzada",
 	"license": "MIT",
 	"dependencies": {
-		"dub-subpackages:lib": "*"
-	}
+		"lib": {
+			"path": "../lib"
+		}
+	},
+	"targetPath": "bin"
 }

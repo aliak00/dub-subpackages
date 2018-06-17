@@ -3,7 +3,7 @@
 * `lib` is a library that has multiple sub packages
 * `test` is an application that uses it
 
-`lib` has two sub pacakges - `liba` and `libb`, which in turn each have to inner modules - `suba` and `subb`. The dir structure is:
+`lib` has two sub pacakges - `suba` and `subb`, which in turn each have to inner modules - `moda` and `modb`. The dir structure is:
 
 ```
 lib/
@@ -25,7 +25,7 @@ lib/
             └── package.d
 ```
 
-Where `liba/package` exposes the function in modules `liba.suba` and `libb.subb` publicly. And `libb` has no package so `libb`'s submodule need to be explicitly imported.
+Where `suba/package` exposes the function in modules `suba.moda` and `suba.modb` publicly. And `subb` has no package so `subb`'s submodule need to be explicitly imported.
 
 In the `lib` folder:
 
