@@ -12,8 +12,8 @@ void import_subb_moda_only() {
 }
 
 void import_subb_modb_only() {
-	import lib.subb.moda;
-	fa;
+	import lib.subb.modb;
+	fb;
 }
 
 void main()

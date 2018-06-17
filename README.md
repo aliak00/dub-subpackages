@@ -8,21 +8,27 @@
 ```
 lib/
 ├── dub.json
-├── liba/
+├── source
+│   └── package.d
+├── suba
 │   ├── dub.json
-│   ├── package.d
-│   └── source/
-│       ├── suba/
-│       │   └── package.d
-│       └── subb/
-│           └── package.d
-└── libb
+│   └── source
+│       └── lib
+│           └── suba
+│               ├── moda
+│               │   └── package.d
+│               ├── modb
+│               │   └── package.d
+│               └── package.d
+└── subb
     ├── dub.json
-    └── source/
-        ├── suba/
-        │   └── package.d
-        └── subb/
-            └── package.d
+    └── source
+        └── lib
+            └── subb
+                ├── moda
+                │   └── package.d
+                └── modb
+                    └── package.d
 ```
 
 Where `suba/package` exposes the function in modules `suba.moda` and `suba.modb` publicly. And `subb` has no package so `subb`'s submodule need to be explicitly imported.
@@ -32,5 +38,5 @@ In the `lib` folder:
 ```bash
 dub test :liba # should run tests for liba
 dub test :libb # should run tests for libb
-dub test # should run all tests
+dub test # will run test for main lib and not sub packages
 ```
