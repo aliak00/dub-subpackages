@@ -14,5 +14,9 @@
 		"./suba/",
 		"./subb/"
 	],
+	"sourcePaths": [
+		"./suba/",
+		"./subb/"
+	],
 	"targetPath": "bin"
 }

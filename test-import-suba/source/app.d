@@ -3,12 +3,12 @@ module test_import_suba;
 version (roottest) {} else
 void main() {
 	// import lib.subb.modb; // error
+	import std.stdio: writeln;
 	import lib.suba;
-	fa;
-	fb;
+	writeln("running: ", fa, ", ", fb);
 }
 
 unittest {
 	import std.stdio: writeln;
-	"import suba tests".writeln;
+	writeln("unittest: test suba");
 }

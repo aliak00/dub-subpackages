@@ -1,11 +1,11 @@
 module lib.subb.modb;
 
-public void fb() {
-    import std.stdio : writeln;
+public string fb() {
     import std.traits : moduleName;
-    writeln(moduleName!fb);
+    return moduleName!fb;
 }
 
 unittest {
-    fb;
+    import std.stdio : writeln;
+    writeln("unittest: ", fb);
 }

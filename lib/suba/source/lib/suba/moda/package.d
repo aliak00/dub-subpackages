@@ -1,11 +1,11 @@
 module lib.suba.moda;
 
-public void fa() {
-    import std.stdio : writeln;
+string fa() {
     import std.traits : moduleName;
-    writeln(moduleName!fa);
+    return moduleName!fa;
 }
 
 unittest {
-    fa;
+    import std.stdio : writeln;
+    writeln("unittest: ", fa);
 }

@@ -1,29 +1,31 @@
 module test_import_all;
 
-void import_all_suba() {
+string import_all_suba() {
 	import lib.suba;
-	fa;
-	fb;
+	return fa ~ ":" ~ fb;
 }
 
-void import_subb_moda_only() {
+string import_subb_moda_only() {
 	import lib.subb.moda;
-	fa;
+	return fa;
 }
 
-void import_subb_modb_only() {
+string import_subb_modb_only() {
 	import lib.subb.modb;
-	fb;
+	return fb;
 }
 
 version (roottest) {} else
 void main() {
-	import_all_suba;
-	import_subb_moda_only;
-	import_subb_modb_only;
+	import std.stdio: writeln;
+	writeln("running: "
+		~ "\n  " ~ import_all_suba
+		~ "\n  " ~ import_subb_moda_only
+		~ "\n  " ~ import_subb_modb_only
+	);
 }
 
 unittest {
 	import std.stdio: writeln;
-	"import all tests".writeln;
+	writeln("unittest: test all");
 }
