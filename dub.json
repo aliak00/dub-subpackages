@@ -9,11 +9,9 @@
 	"license": "MIT",
 	"subPackages": [
 		"lib/",
-		"lib/liba/",
-		"lib/libb/",
+		"lib/suba/",
+		"lib/subb/",
 		"test"
 	],
-	"targetPath": "bin",
-
-
+	"targetPath": "bin"
 }

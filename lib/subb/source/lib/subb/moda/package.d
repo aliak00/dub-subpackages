@@ -1,4 +1,4 @@
-module lib.libb.suba;
+module lib.subb.moda;
 
 public void fa() {
     import std.stdio : writeln;

@@ -1,4 +1,4 @@
-module lib.liba.subb;
+module lib.subb.modb;
 
 public void fb() {
     import std.stdio : writeln;

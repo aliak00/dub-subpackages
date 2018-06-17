@@ -1,24 +1,24 @@
 import std.stdio;
 
-void import_all_liba() {
-	import lib.liba;
+void import_all_suba() {
+	import lib.suba;
 	fa;
 	fb;
 }
 
-void import_libb_suba_only() {
-	import lib.libb.suba;
+void import_subb_moda_only() {
+	import lib.subb.moda;
 	fa;
 }
 
-void import_libb_subb_only() {
-	import lib.libb.suba;
+void import_subb_modb_only() {
+	import lib.subb.moda;
 	fa;
 }
 
 void main()
 {
-	import_all_liba;
-	import_libb_suba_only;
-	import_libb_subb_only;
+	import_all_suba;
+	import_subb_moda_only;
+	import_subb_modb_only;
 }

@@ -1,13 +1,13 @@
-all: test liba libb lib
+all: test suba subb lib
 
 test:
 	dub build :test
 
-liba:
-	dub build :liba
+suba:
+	dub build :suba
 
-libb:
-	dub build :libb
+subb:
+	dub build :subb
 
-libb:
+lib:
 	dub build :lib
