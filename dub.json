@@ -7,11 +7,23 @@
 	"description": "Lots of ways to do dub Sub Packages",
 	"copyright": "Copyright © 2018, Ali Akhtarzada",
 	"license": "MIT",
-	"subPackages": [
-		"lib/",
-		"lib/suba/",
-		"lib/subb/",
-		"test"
+	"configurations": [
+		{
+			"versions": [
+				"roottest"
+			],
+			"name": "unittest",
+			"targetType": "library",
+			"sourcePaths": [
+				"./lib/",
+				"./test-import-all/",
+				"./test-import-suba/"
+			],
+			"importPaths": [
+				"./test-import-all/source",
+				"./test-import-suba/source"
+			]
+		}
 	],
 	"targetPath": "bin"
 }
