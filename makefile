@@ -1,7 +1,7 @@
 all: test suba subb lib
 
 test:
-	dub build :test
+	cd test; dub build
 
 suba:
 	dub build :suba

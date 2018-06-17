@@ -1,5 +1,5 @@
 {
-	"name": "test",
+	"name": "test-import-all",
 	"authors": [
 		"Ali Akhtarzada"
 	],
@@ -8,7 +8,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"lib": {
-			"path": "../lib"
+			"path": "../lib/"
 		}
 	},
 	"targetPath": "bin"

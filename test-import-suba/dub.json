@@ -1,5 +1,5 @@
 {
-	"name": "lib",
+	"name": "test-import-suba",
 	"authors": [
 		"Ali Akhtarzada"
 	],
@@ -7,16 +7,9 @@
 	"copyright": "Copyright © 2018, Ali Akhtarzada",
 	"license": "MIT",
 	"dependencies": {
-		"lib:suba": "*",
-		"lib:subb": "*"
+		"lib:suba": {
+			"path": "../lib/"
+		}
 	},
-	"subPackages": [
-		"./suba/",
-		"./subb/"
-	],
-	"targetPath": "bin",
-	"sourcePaths": [
-		"./suba/",
-		"./subb/"
-	]
+	"targetPath": "bin"
 }
